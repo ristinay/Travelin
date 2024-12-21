@@ -1,0 +1,336 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('img/paris.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero span {
+    color: #00aaff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.cta-button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+.cta-button:hover {
+    background-color: #007acc;
+}
+
+section {
+    margin-top: 50px;
+}
+
+/* Destinations Section */
+/* Top Destinations Section */
+.destinations {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.destinations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.destination-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; /* Pusatkan secara vertikal */
+}
+
+.destination {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s, box-shadow 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan konten di tengah */
+}
+
+.destination img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.destination h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.destination p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Packages Section */
+.packages {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+}
+
+.packages h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.package-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center; /* Pusatkan secara vertikal */
+}
+
+.package {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s, box-shadow 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan konten di tengah */
+}
+
+.package h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #00aaff;
+}
+
+.package p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.package-button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+
+.package-button:hover {
+    background-color: #007acc;
+}
+
+.package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Contact Section */
+.contact {
+    background: linear-gradient(135deg, #00aaff, #007acc);
+    color: white;
+    padding: 50px 20px;
+    display: flex; /* Gunakan Flexbox */
+    flex-direction: column; /* Atur elemen menjadi kolom (vertikal) */
+    justify-content: center; /* Pusatkan secara vertikal */
+    align-items: center; /* Pusatkan secara horizontal */
+    min-height: 100vh; /* Pastikan memenuhi tinggi layar */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Beri jarak ke formulir di bawahnya */
+}
+
+#contact-form {
+    max-width: 600px;
+    width: 100%; /* Pastikan lebar formulir responsif */
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Teks label tetap rata kiri */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Pastikan input mengisi seluruh kolom */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+.contact button {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block; /* Pastikan tombol berada di tengah */
+    margin: 0 auto; /* Pusatkan tombol */
+}
+
+.contact button:hover {
+    background-color: #007acc;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        display: none;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .destination-list,
+    .package-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
