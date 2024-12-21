@@ -50,7 +50,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background: url('img/paris.jpg') no-repeat center center/cover;
+    background: url('paris.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
