@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agensi Travel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Travelin</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinasi</a></li>
+                <li><a href="#packages">Paket</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Jelajahi dunia bersama <span>Travelin</span></h2>
+        <p>Temukan tempat indah dan Liburan impianmu.</p>
+        <button class="cta-button" onclick="scrollToSection('destinations')">Explore Now</button>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2>Top Destinasi</h2>
+        <div class="destination-list">
+            <div class="destination">
+                <img src="img/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+            </div>
+            <div class="destination">
+                <img src="img/bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+            </div>
+            <div class="destination">
+                <img src="img/greenland.jpg" alt="New York City">
+                <h3>New York </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <h2>Paket Travel</h2>
+        <div class="package-list">
+            <div class="package">
+                <h3>Romantic Paris</h3>
+                <p>5 hari / 4 malam - Rp.999.999</p>
+                <button class="package-button">Book Now</button>
+            </div>
+            <div class="package">
+                <h3>Tropical Bali</h3>
+                <p>7 Hari / 6 Malam - Rp.999.999</p>
+                <button class="package-button">Book Now</button>
+            </div>
+            <div class="package">
+                <h3>NYC Adventure</h3>
+                <p>4 Hari / 3 Malam - Rp.999.999</p>
+                <button class="package-button">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Travelin. All Rights Reserved. </p>
+        <p>@Kelompok 9</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
